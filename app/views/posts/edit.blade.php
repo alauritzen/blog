@@ -1,17 +1,15 @@
 @extends('layouts.master')
 
 @section('top-script')
-    <style>
-        .input_box {
-            left-padding: 300px;
-        }
-    </style>
+
 @stop
 
+
 @section('content')
-    <h1>Create a blog post!</h1>
+
+    <h1>Update a blog post!</h1>
     
-    {{ Form::open(array('action'=>'PostsController@store')) }}
+    {{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT')) }}
     
         <p>
             {{ Form::label('title', 'Title') }}
@@ -34,6 +32,7 @@
 
         
     {{ Form::close() }}
+
 
 
 @stop

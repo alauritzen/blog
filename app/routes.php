@@ -30,4 +30,6 @@ Route::get('/posts', 'PostsController@index');
 
 Route::get('/posts/{id}', 'PostsController@show');
 
+Route::get('/posts/{post}/edit', 'PostsController@edit');
+
 
