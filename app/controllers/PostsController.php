@@ -39,11 +39,14 @@ class PostsController extends \BaseController {
 
 		$validator=Validator::make(Input::all(), Post::$rules);
 		if ($validator->fails()) {
+			Session::flash('errorMessage', 'Entry did not save!');
 			return Redirect::back()->withInput()->withErrors($validator);
 		} else {
 			if ($post->save()) {
+				Session::flash('successMessage', 'New entry created!');
 				return Redirect::action('PostsController@show', $post->id);
 			} else {
+				Session::flash('errorMessage', 'Entry did not save!');
 				return Redirect::back()->withInput();
 			}			
 		}
@@ -60,6 +63,7 @@ class PostsController extends \BaseController {
 	public function show($id)
 	{
 		$post=Post::find($id);
+		$post->converted_create_time=$post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A');
 		return View::make('posts.show')->with('post', $post);
 	}
 
@@ -92,11 +96,14 @@ class PostsController extends \BaseController {
 
 		$validator=Validator::make(Input::all(), Post::$rules);
 		if ($validator->fails()) {
+			Session::flash('errorMessage', 'Update did not save!');
 			return Redirect::back()->withInput()->withErrors($validator);
 		} else {
 			if ($post->save()) {
+				Session::flash('successMessage', 'Entry successfully updated!');
 				return Redirect::action('PostsController@show', $post->id);
 			} else {
+				Session::flash('errorMessage', 'Update did not save!');
 				return Redirect::back()->withInput();
 			}			
 		}
