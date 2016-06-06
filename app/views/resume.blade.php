@@ -7,6 +7,8 @@
 @section('top-script')
     <!-- My stylesheet -->
     <link rel="stylesheet" href="css/resume_style.css">
+    <!-- Font Awesome stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 @stop
 
 @section('content')
@@ -24,7 +26,12 @@
                 <ul class="list-unstyled personal">
                     <li><h1>Alan Lauritzen</h1></li>
                     <li><h2>San Antonio, TX</h2></li>
-                    <li><h2><a href="mailto:alaurit@gmail.com">Email</a></h2></li>
+                    <ul class="list-unstyled icons">
+                        <li><a href="mailto:alaurit@gmail.com"><i class="fa fa-paper-plane" aria-hidden="true"></i></a></li>
+                        <li><a href="http://github.com/alauritzen" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/alan-lauritzen-02a078104" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    </ul>
                 </ul>
             </div>
 
@@ -33,7 +40,7 @@
                 <ul class="nav navbar-nav navbar-right links">
                     <li><a href="#about_me">About me</a></li>
                     <li><a href="#work_history">Work history</a></li>
-                    <li><a href="/portfolio">Portfolio</a></li>
+                    <li><a href="#">Portfolio</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div>
@@ -75,7 +82,7 @@
                     </tr>
                     <tr>
                         <td>jQuery</td>
-                        <td><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></td>
+                        <td><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-  empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></td>
                     </tr>
                     <tr>
                         <td>PHP</td>
@@ -89,7 +96,6 @@
                         <td>Laravel</td>
                         <td><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></td>
                     </tr>
-
                 </table>
             </div> <!-- End technologies -->
         </div> <!--End about me section -->
@@ -171,7 +177,7 @@
                         <dt>Warehouse laborer/customer service representative</dt>
                         <dd>Apr 2015-Aug 2015</dd>
                     </dl>
-                    <ul>
+                    <ul class="job_description">
                         <li>Adapted quickly to SAP, taking on advanced roles in the branch’s operations.</li>
                         <li>First point of contact for up to 40-60 calls a day.</li>
                         <li>Assist customers and account managers by entering orders and quotes, creating returns and coordinating return shipments, tracking deliveries, providing order confirmations and account statements, processing credit card payments, and communicating with machine service companies to schedule repair calls.</li>
@@ -192,7 +198,7 @@
                         <dt>Unloader</dt>
                         <dd>Jan 2015-April 2015</dd>
                     </dl>
-                    <ul>
+                    <ul class="job_description">
                         <li>Unload trailers using a stand-up forklift or stand-up clamp. Label freight to identify its stocking location in the warehouse.</li>
                     </ul>
                 </div>
@@ -214,7 +220,7 @@
                         <dt>Temporary stock clerk</dt>
                         <dd>2001-2002</dd>
                     </dl>
-                    <ul>
+                    <ul class="job_description">
                         <li>Proposed successful floor reorganization from class-based to alphabetical by author’s last name. This had little impact on customers’ shopping experience but greatly increased efficiency and accuracy for employees. Helped web order fulfillment improve their turnaround during peak days by 25% from the year before.</li>
                         <li>Used Excel and Word to redesign shelf tags for textbooks. Reduced generation time from 3-4 hours to 30-45 minutes. Incorporated rental pricing, which had not been available on the tags generated by our textbook software, and also improved accuracy and visibility.</li>
                         <li>Initiated sales of non-returnable overstock on Amazon.com and Half.com markets using Indaba software. This has allowed us to salvage over $290,000 since December 2011, and reduce inventory by over 13,700 books.</li>

@@ -11,10 +11,6 @@ body {background-image: url(/img/subtle_white_mini_waves.png);}
   object-fit: contain;
   }
 
-#carousel_locations {
-    height: 300px;
-}
-
 .personal h1, .personal h2 {font-family: Georgia, Times, serif;}
 
 .personal h2 {
@@ -22,8 +18,20 @@ body {background-image: url(/img/subtle_white_mini_waves.png);}
     margin: 10px 0px;
 }
 
-a.left.carousel-control, a.right.carousel-control {
-    background-image: none;
+.icons li {
+    display: inline;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    font-size: 1.8rem;
 }
 
 h3 {font-family: Tahoma, Verdana, sans-serif;}
+
+.job_description {
+    padding-left: 10px;
+    margin-left: 5px;
+}
+
+#carousel_locations .glyphicon, #carousel_locations .carousel-caption {
+    color: #a8ae98;
+}
