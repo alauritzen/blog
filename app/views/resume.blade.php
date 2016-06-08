@@ -1,17 +1,21 @@
-@extends('layouts.master')
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume</title>
+    <meta charset="utf-8">
+    <!-- Add meta below per W3 schools, to ensure proper rendering and touch zooming; www.w3schools.com/bootstrap/bootstrap_get_started.asp -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<!-- My stylesheet -->
+<link rel="stylesheet" href="css/resume_style.css">
+<!-- Font Awesome stylesheet -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
-@section('title')
-    Resume
-@stop
+</head>
 
-@section('top-script')
-    <!-- My stylesheet -->
-    <link rel="stylesheet" href="css/resume_style.css">
-    <!-- Font Awesome stylesheet -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-@stop
+<body>
 
-@section('content')
     <!-- Collapsible navbar -->
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -40,7 +44,7 @@
                 <ul class="nav navbar-nav navbar-right links">
                     <li><a href="#about_me">About me</a></li>
                     <li><a href="#work_history">Work history</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href={{ action('HomeController@showPortfolio') }}>Portfolio</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div>
@@ -89,11 +93,11 @@
                         <td><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></td>
                     </tr>
                     <tr>
-                        <td>MySQL</td>
+                        <td>Laravel</td>
                         <td><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></td>
                     </tr>
                     <tr>
-                        <td>Laravel</td>
+                        <td>MySQL</td>
                         <td><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span></td>
                     </tr>
                 </table>
@@ -243,4 +247,10 @@
 
 
     </div>
-@stop
+
+<!-- jQuery snippet -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>
