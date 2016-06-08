@@ -1,0 +1,42 @@
+/*Throughout blog*/
+h2 {
+    color: blue;
+}
+
+/*Show post page*/
+
+.btn a {
+    color: white;
+}
+
+/*---Navbar---*/
+.navbar {
+    min-height: 10rem;
+}
+
+.navbar-header {
+    min-height: 10rem;
+}
+
+.navbar-brand img {
+    max-height: 10rem;
+    max-width: 10rem;
+    float: left;
+    border-radius: 50%;
+}
+
+
+
+#navbar_name {
+    float: left;
+}
+
+#right_links {
+    float:right;
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
+
+.navbar-header {
+    border: none;
+}
