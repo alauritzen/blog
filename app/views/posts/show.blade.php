@@ -13,7 +13,7 @@
     <p> {{{ $post->description }}} </p>
     <p><small>Created: {{ $post->converted_create_time }}</small></p>
 
-    @if($post->user_id==Auth::user())
+    @if($post->user_id==Auth::user()->id)
         <button><a href={{action('PostsController@edit', $post->id)}}>Edit</a></button>
         <button><a href="#">Delete</a></button>
     @endif
