@@ -32,4 +32,12 @@ Route::get('/posts/{id}', 'PostsController@show');
 
 Route::get('/posts/{post}/edit', 'PostsController@edit');
 
+Route::get('/users/login', 'UsersController@login');
 
+Route::post('/users/auth', 'UsersController@auth');
+
+Route::get('/users/logout', 'UsersController@logout');
+
+Route::get('/users/signup', 'UsersController@showSignup');
+
+Route::post('/users/signup', 'UsersController@createUser');

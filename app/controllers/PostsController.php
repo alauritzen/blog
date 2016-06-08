@@ -2,6 +2,17 @@
 
 class PostsController extends \BaseController {
 
+	// before filter
+	public function __construct()
+	{
+		$this->beforeFilter('auth', array(
+			'except' => array(
+				'index',
+				'show')
+			));
+	}
+
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -36,6 +47,7 @@ class PostsController extends \BaseController {
 		$post=new Post();
 		$post->title=Input::get('title');
 		$post->description=Input::get('description');
+		$post->user_id=Auth::user()->id;
 
 		$validator=Validator::make(Input::all(), Post::$rules);
 		if ($validator->fails()) {
@@ -44,6 +56,7 @@ class PostsController extends \BaseController {
 		} else {
 			if ($post->save()) {
 				Session::flash('successMessage', 'New entry created!');
+				Log::info('A new post has been created!');
 				return Redirect::action('PostsController@show', $post->id);
 			} else {
 				Session::flash('errorMessage', 'Entry did not save!');
@@ -78,7 +91,6 @@ class PostsController extends \BaseController {
 	{
 		$post=Post::find($id);
 		return View::make('posts.edit')->with('post',$post);
-
 	}
 
 

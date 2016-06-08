@@ -51,4 +51,5 @@ class HomeController extends BaseController {
 	    $data=array('guess'=>$guess, 'number'=>$number, 'msg'=>$msg);
 	    return View::make('roll-dice')->with($data);
 	}
+
 }

@@ -3,7 +3,7 @@
 @section('content')
 
     @foreach($posts as $post)
-        <h2> {{{ $post->title }}} </h2> 
+        <a href={{ action('PostsController@show', $post->id) }}><h2> {{{ $post->title }}}</h2> </a>
         <p> {{{ $post->description }}} </p>
     @endforeach
 
