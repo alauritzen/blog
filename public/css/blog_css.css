@@ -1,4 +1,9 @@
 /*----------------Throughout blog-------------*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 .content {
     padding-left:4rem;
 }
@@ -7,9 +12,11 @@ body {
     /*background-color: #A8A6A6;*/
     /*background-color: #FFEACC;*/
     background-color: #49727F;
+    /* Margin bottom by footer height */
+    margin-bottom: 120px;
 }
 
-h2 {
+h1, h2, p {
     color: #011B24;
 }
 
@@ -40,6 +47,7 @@ p {
 
 #navbar_name h1 {
     font-size: 3.5rem;
+    color: #A8A6A6;
 }
 
 #navbar_name h2 {
@@ -114,5 +122,54 @@ p {
     padding-right: 1rem;
 }
 
+/*-----------------footer-------------------*/
+/*
 
 
+#footer {
+    font-family: Georgia, Times, serif;
+    color: #C2D1C2;
+    background-color: #133C9A;
+}
+
+.navbar-static-bottom {
+    margin-bottom: 0px;
+    border: 0px;
+}
+*/
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 110px;
+  background-color: #A8A6A6;
+}
+
+.icons li {
+    display:inline;
+    margin-left: 1.0rem;
+    margin-right: 1.0rem;
+    font-size: 1.5rem;
+}
+
+.footer h1 {
+    font-size: 1.9rem;
+
+}
+
+.footer h2 {
+    margin-top: 0px;
+    font-size: 1.5rem;
+}
+
+.footer i {
+        color: #49727F;
+}
+
+.icons {
+    position: relative;
+    right: 10px;
+}
