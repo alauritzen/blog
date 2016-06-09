@@ -76,6 +76,8 @@ class PostsController extends \BaseController {
 	public function show($id)
 	{
 		$post=Post::find($id);
+		$user=$post->user;
+		$post->username=$user->username;
 		$post->converted_create_time=$post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A');
 		return View::make('posts.show')->with('post', $post);
 	}
