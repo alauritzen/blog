@@ -11,15 +11,15 @@
 
 {{ Form::open(array('action'=>'UsersController@auth')) }}
     
-    <p>
+    <p class="form-input login-form">
         {{ Form::label('email', 'Email') }}
-        {{ Form::email('email', null, array ('value'=>Input::old('email'),
-        'class'=>'input_box')) }}
+        <span class="inline-form">{{ Form::email('email', null, array ('value'=>Input::old('email'),
+        'class'=>'input_box')) }}<span>
     </p>
 
-    <p>
+    <p class="form-input login-form">
         {{ Form::label('password', 'Password') }}
-        {{ Form::password('password') }}
+        <span class="inline-form">{{ Form::password('password') }}</span>
     </p>
 
     <p>

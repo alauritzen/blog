@@ -10,7 +10,11 @@ body {
 }
 
 h2 {
-    /*color:black;*/
+    color: #011B24;
+}
+
+p {
+    margin-bottom: .3rem;
 }
 
 /*---------------------Navbar----------------*/
@@ -41,6 +45,7 @@ h2 {
 #navbar_name h2 {
     font-size: 2rem;
     margin-top: 1.5rem;
+    color: #A8A6A6;
 }
 
 .navbar-header {
@@ -86,5 +91,28 @@ h2 {
 
 
 /*---------------post show--------------------*/
+.post-show h2 {
+    color: #011B24;
+}
+
+.post-show button {
+    margin-top: 1rem;
+}
+
+/*--------------form pages-----------------*/
+.form-input {
+    margin-bottom: 1.2rem;
+}
+
+.login-form > .inline-form {
+    position: absolute;
+    left: 17rem;
+}
+
+.signup-form > .inline-form {
+    position: absolute;
+    left: 22rem;
+}
+
 
 
