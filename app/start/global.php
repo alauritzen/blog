@@ -2,7 +2,7 @@
 
 App::missing(function($exception)
 {
-    return Response::view('errors.missing', array(), 404);
+    return Response::view('partials.404', array(), 404);
 });
 
 /*

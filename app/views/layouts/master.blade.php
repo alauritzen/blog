@@ -20,7 +20,7 @@
         <div class='alert alert-danger'>{{{ Session::get('errorMessage') }}}</div>
     @endif
 
-    <div class="container">
+    <div class="container content">
         <div class="row">
             @yield('content')
         </div>

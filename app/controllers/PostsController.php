@@ -75,10 +75,13 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		$post=Post::find($id);
-		$user=$post->user;
-		$post->username=$user->username;
+		try {
+			$post=Post::findOrFail($id);
+		} catch (Exception $e) {
+			App::abort(404);
+		}
 		$post->converted_create_time=$post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i:s A');
+		// dd($post->user);
 		return View::make('posts.show')->with('post', $post);
 	}
 

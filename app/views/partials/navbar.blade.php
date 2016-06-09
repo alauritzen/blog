@@ -15,7 +15,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <!-- left-side links -->
       <div id="navbar_name">
-        <h1>Alan's blog</h1>
+        <h1>Code all the web!</h1>
+        <h2>A blog and portfolio site for Alan Lauritzen</h2>
         <ul class="nav navbar-nav">
             <li><a href={{ action('HomeController@showResume') }}>Resume <span class="sr-only">(current)</span></a></li>
             <li><a href={{ action('HomeController@showPortfolio') }}>Portfolio</a></li>
