@@ -1,17 +1,46 @@
-/*Throughout blog*/
+/*----------------Throughout blog-------------*/
+.content {
+    padding-left:4rem;
+}
+
+body {
+    /*background-color: #A8A6A6;*/
+    /*background-color: #FFEACC;*/
+    background-color: #49727F;
+}
+
 h2 {
-    color: blue;
+    /*color:black;*/
 }
 
-/*Show post page*/
-
-.btn a {
-    color: white;
-}
-
-/*---Navbar---*/
+/*---------------------Navbar----------------*/
 .navbar {
     min-height: 10rem;
+    /*background-color: #002a0e;*/
+    background-color: #1A4553;
+    color: #A8A6A6;
+    /*color: #999;*/
+}
+
+.navbar-default .navbar-nav>li>a  {
+    color: #A8A6A6;
+    /*color: #777;*/
+    /*color: white;*/
+}
+
+.navbar-default .navbar-nav>li>a:hover  {
+    /*color: #A8A6A6;*/
+    color: #011B24;
+
+}
+
+#navbar_name h1 {
+    font-size: 3.5rem;
+}
+
+#navbar_name h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
 }
 
 .navbar-header {
@@ -24,8 +53,6 @@ h2 {
     float: left;
     border-radius: 50%;
 }
-
-
 
 #navbar_name {
     float: left;
@@ -40,3 +67,24 @@ h2 {
 .navbar-header {
     border: none;
 }
+
+/*-----------------post index----------------*/
+.post-index a {
+    /*color: #777;*/
+    color: #011B24;
+}
+
+.post-index a:hover {
+    color: #1A4553;
+}
+
+.post-index p {
+    color: black;
+}
+
+/*--------------index pagination------------*/
+
+
+/*---------------post show--------------------*/
+
+
