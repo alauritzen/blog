@@ -135,7 +135,9 @@ class PostsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		return "Destroy all the posts! (Actually just post $id.)";
+		$post=Post::find($id);
+		$post->delete();
+		return Redirect::action('PostsController@index');
 	}
 
 
