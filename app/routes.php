@@ -20,6 +20,8 @@ Route::get('/portfolio', 'HomeController@showPortfolio');
 
 Route::get('/whackamole', 'HomeController@whackAMole');
 
+Route::get('/weather', 'HomeController@showWeather');
+
 Route::get('/simplesimon', 'HomeController@showSimpleSimon');
 
 Route::get('/rolldice/{guess}', 'HomeController@showRollDice');

@@ -1,0 +1,36 @@
+body {
+    background-image: url(/img/cave.jpg);
+    background-repeat: no-repeat;
+    font-family: "Marcellus SC", Palatino, serif;
+}
+
+.scoreboard {
+    color: #fdc430;
+}
+
+.mole_hill {
+    height: 100px;
+    width: 100px;
+    float: left;
+    /*border: grey solid 1px; visible while testing*/
+    background-image: url(/img/ring90.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.0;
+}
+
+.pitch {
+    padding-left: 0px;
+    padding-right: 0px;
+    display: inline-block;
+    overflow: hidden;
+    width: auto;
+    margin-bottom: 0px;
+}
+
+#gollum {
+    position: fixed;
+    bottom: -350px;
+    left: -250px;
+    pointer-events: none;
+}
