@@ -19,7 +19,7 @@
         <p>A simple Whack-A-Mole game that uses jQuery to recognize mouse events.</p>
         <li><a href={{{action('HomeController@showSimpleSimon')}}}><h2>Simple Simon</h2></a></li>
         <p>A Simple Simon style game, practicing jQuery and Javascript.</p>
-        <li><a href={{{action('HomeController@showPoem')}}}<h2>Poem wave</h2></li>
+        <li><a href={{{action('HomeController@showPoem')}}}><h2>Poem wave</h2></a></li>
         <p>A very early exercise, after an introduction to HTML and CSS.</p>
         
     </ul>
