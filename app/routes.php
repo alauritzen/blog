@@ -24,6 +24,8 @@ Route::get('/weather', 'HomeController@showWeather');
 
 Route::get('/simplesimon', 'HomeController@showSimpleSimon');
 
+Route::get('/poem', 'HomeController@showPoem');
+
 Route::get('/rolldice/{guess}', 'HomeController@showRollDice');
 
 Route::resource('posts', 'PostsController');

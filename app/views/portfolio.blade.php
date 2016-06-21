@@ -16,9 +16,11 @@
         <li><a href={{{action('HomeController@showWeather')}}}><h2>Weather map</h2></a></li>
         <p>Uses APIs from google maps and openweathermap.org to display multiday weather forecast. Includes draggable marker and text field to change location and update forecast. Other technologies used: HTML, CSS, jQuery</p>
         <li><a href={{{action('HomeController@whackAMole')}}}><h2>Catch the Rings</h2></a></li>
-        <p>A simple Whack-A-Mole game that uses jQuery to recognize user events.</p>
-        <li><h2>Simple Simon<h2></li>
-        <li><h2>Poem wave<h2></li>
+        <p>A simple Whack-A-Mole game that uses jQuery to recognize mouse events.</p>
+        <li><a href={{{action('HomeController@showSimpleSimon')}}}><h2>Simple Simon</h2></a></li>
+        <p>A Simple Simon style game, practicing jQuery and Javascript.</p>
+        <li><a href={{{action('HomeController@showPoem')}}}<h2>Poem wave</h2></li>
+        <p>A very early exercise, after an introduction to HTML and CSS.</p>
         
     </ul>
 @stop

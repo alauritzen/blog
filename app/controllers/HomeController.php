@@ -42,7 +42,12 @@ class HomeController extends BaseController {
 
 	public function showSimpleSimon()
 	{
-		return View::make('simplesimon');
+		return View::make('simon.index');
+	}
+
+	public function showPoem()
+	{
+		return View::make('poem_wave');
 	}
 
 	public function showRollDice($guess)
