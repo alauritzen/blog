@@ -26,7 +26,12 @@
 
     <div class="container content">
         <div class="row">
-            @yield('content')
+            <!-- <div class="col-xs-12 col-sm-7 col-md-5 col-lg-4"> -->
+                @yield('content')
+            <!-- </div> -->
+            <!-- <div class="hidden-xs col-sm-5 col-md-7 col-lg-8"> -->
+            {{-- HTML::image('/img/desktopMacbook.jpeg', 'A macbook on a table', array('id'=>'macbookImg')) --}}
+            <!-- </div> -->
         </div>
     </div>
     

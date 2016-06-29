@@ -6,6 +6,8 @@ html {
 
 .content {
     padding-left:4rem;
+    /*height:100%;
+    overflow:hidden;*/
 }
 
 body {
@@ -23,6 +25,15 @@ h1, h2, p {
 p {
     margin-bottom: .3rem;
 }
+
+/*html, body {
+    height: 100%;
+}
+
+#macbookImg {
+    width:130%;
+    height: 130%;
+}*/
 
 /*---------------------Navbar----------------*/
 .navbar {
