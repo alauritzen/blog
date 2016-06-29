@@ -5,26 +5,9 @@ class PostTableSeeder extends Seeder
     public function run()
     {
         $post = new Post();
-        $post->title = "First post";
-        $post->description = "I made a post in Laravel";
-        $post->user_id = User::first()->id;
-        $post->save();
-
-        $post = new Post();
-        $post->title = "Second post";
-        $post->description = "I made another post in Laravel";
-        $post->user_id = User::first()->id;
-        $post->save();
-
-        $post = new Post();
-        $post->title = "Third post";
-        $post->description = "I made yet another post in Laravel";
-        $post->user_id = User::first()->id;
-        $post->save();
-
-        $post = new Post();
-        $post->title = "Fourth post";
-        $post->description = "I made a last post in Laravel";
+        $post->title = "Why I chose Codeup";
+        $post->description = 
+            "I chose Codeup because I happen to be in San Antonio, and I like the community and resources that are available through a physical school, compared to an online course. Among the resources, I include the Geekdom shared workspace nearby that hosts so many programming Meetup groups.";
         $post->user_id = User::first()->id;
         $post->save();
 
